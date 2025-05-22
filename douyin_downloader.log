@@ -1,0 +1,69 @@
+2025-05-22 15:15:46,432 - INFO - 创建保存目录: e:\抖音视频下载00
+2025-05-22 15:15:46,434 - INFO - ==================================================
+2025-05-22 15:15:46,434 - INFO - 开始抖音视频下载任务，关键词: 鸭脖, 目标数量: 20
+2025-05-22 15:15:46,434 - INFO - 开始获取视频列表，关键词: 鸭脖, 目标数量: 20
+2025-05-22 15:19:32,037 - INFO - 下载任务完成，共下载 0 个视频
+2025-05-22 15:19:33,070 - INFO - 浏览器已关闭
+2025-05-22 15:22:05,533 - INFO - ==================================================
+2025-05-22 15:22:05,533 - INFO - 开始抖音视频下载任务，关键词: 鸭脖, 目标数量: 20
+2025-05-22 15:22:05,534 - INFO - 开始获取视频列表，关键词: 鸭脖, 目标数量: 20
+2025-05-22 15:22:32,162 - INFO - 已获取 20/20 个视频
+2025-05-22 15:22:55,804 - WARNING - 尝试 1/3: 未获取到视频数据，刷新页面
+2025-05-22 15:23:19,113 - WARNING - 尝试 2/3: 未获取到视频数据，刷新页面
+2025-05-22 15:23:42,591 - WARNING - 尝试 3/3: 未获取到视频数据，刷新页面
+2025-05-22 15:24:06,040 - WARNING - 尝试 1/3: 未获取到视频数据，刷新页面
+2025-05-22 15:24:29,580 - WARNING - 尝试 2/3: 未获取到视频数据，刷新页面
+2025-05-22 15:24:31,585 - ERROR - 尝试 3/3: 获取视频URL失败: 
+与页面的连接已断开。
+版本: 4.1.0.18
+2025-05-22 15:24:33,630 - ERROR - 尝试 1/3: 获取视频URL失败: 
+与页面的连接已断开。
+版本: 4.1.0.18
+2025-05-22 15:24:33,630 - CRITICAL - 下载器运行失败: cannot access local variable 'tab' where it is not associated with a value
+Traceback (most recent call last):
+  File "e:\hhggg\测试0011.py", line 70, in get_video_url
+    link = video_element.ele('css:a.hY8lWHgA._4furHfW').link
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_elements\chromium_element.py", line 420, in ele
+    return self._ele(locator, timeout, index=index, method='ele()')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_base\base.py", line 83, in _ele
+    r = self._find_elements(locator, timeout=timeout, index=index, relative=relative, raise_err=raise_err)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_elements\chromium_element.py", line 435, in _find_elements
+    return find_in_chromium_ele(self, locator, index, timeout, relative=relative)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_elements\chromium_element.py", line 968, in find_in_chromium_ele
+    return find_by_css(ele, loc[1], index, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_elements\chromium_element.py", line 1068, in find_by_css
+    result = do_find()
+             ^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_elements\chromium_element.py", line 1045, in do_find
+    res = ele.owner._run_cdp('Runtime.callFunctionOn', functionDeclaration=js, objectId=ele._obj_id,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_pages\chromium_base.py", line 384, in _run_cdp
+    return r if __ERROR__ not in r else raise_error(r, self.browser, ignore)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\python\Lib\site-packages\DrissionPage\_functions\tools.py", line 199, in raise_error
+    raise r
+DrissionPage.errors.PageDisconnectedError: 
+与页面的连接已断开。
+版本: 4.1.0.18
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "e:\hhggg\测试0011.py", line 154, in run
+    tab, video_url = self.get_video_url(video)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "e:\hhggg\测试0011.py", line 89, in get_video_url
+    if tab:
+       ^^^
+UnboundLocalError: cannot access local variable 'tab' where it is not associated with a value
+2025-05-22 15:24:33,698 - INFO - 浏览器已关闭
+2025-05-22 15:28:55,447 - INFO - ==================================================
+2025-05-22 15:28:55,447 - INFO - 开始抖音视频下载任务，关键词: 鸭脖, 目标数量: 20
+2025-05-22 15:28:55,447 - INFO - 开始获取视频列表，关键词: 鸭脖, 目标数量: 20
+2025-05-22 15:29:22,757 - INFO - 已获取 20/20 个视频
+2025-05-22 15:30:00,911 - WARNING - 未获取到视频数据
